@@ -1,0 +1,58 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+main {
+    width: 700px;
+    background-color: grey;
+    border: 3px solid black;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+}
+
+#carusel {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+/* Кнопка "перелистывания" — внутри изображения */
+.carousel-btn {
+    position: absolute;
+    bottom: 45%;
+    right: 10px;
+    
+    background-color: rgba(255, 255, 255, 0.0); 
+    color: white;
+    border: 3px solid blue;
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(244, 244, 244, 1);
+    transition: 0.2s;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
